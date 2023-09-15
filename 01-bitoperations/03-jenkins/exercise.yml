@@ -1,0 +1,24 @@
+Name: Jenkins' one-at-a-time hash
+SuggestedSolutionVisibility: AfterSolved
+description: >-
+  ## Goal
+
+  The purpose of this exercise is to practise a little more challenging use of the bit operations. We will use Jenkins' hash function to compute a 32-bit unsigned hash of an arbitrary-length string presented as input.
+  
+  You should use bitwise operators available in your language that operate on words. Do not convert the integer values into strings; this is very inefficient.
+
+  ## Mathematical description
+
+  Comparing two strings can be very inefficient if the strings are long. However, in many applications, we would like to determine if there exist a pair of strings in a database that are equal. One option to approach this would be by using hashes: a simple value (usually a word-length integer) computed from the strings such that two strings are guaranteed to have the same hash if they are equal.
+
+  Note though, that this guarantee goes only one way: two strings may also have equal values even if they are distinct. This is called a hash collision. So, differing hash values ensure that the two strings are distinct, but the opposite may not necessarily hold. A good hash function has few collisions; it behaves as if a random value was associated with each string.
+
+  Look up the definition of the function in [Wikipedia](https://en.wikipedia.org/wiki/Jenkins_hash_function#one_at_a_time). The function should map an arbitrary-length string to a 32-bit unsigned integer.
+
+  For example, correctly implemented hash function will map the string `"a"` to
+  ca2e9442 and `"The quick brown fox jumps over the lazy dog"` to 519e91f5 (without quotation marks).
+
+  ## Specification of your program
+
+  Your program should read an arbitrary string from standard input. You may assume that the string contains only printable 7-bit ASCII characters. The program should then compute the Jenkins' hash value for the string, and output it as a 8-byte hex string to standard output.
+  

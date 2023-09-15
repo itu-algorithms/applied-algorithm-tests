@@ -1,0 +1,22 @@
+Name: Population count
+SuggestedSolutionVisibility: AfterSolved
+description: >-
+  ## Goal
+
+  The purpose of this exercise is to continue practising simple tasks that require bit operations. In this case, we compute the population count (popcount) of a bit vector, that is, the number of one bits (bit positions that are "populated"). This is also known as the Hamming weight or bit sum.
+
+  You should use bitwise operators available in your language that operate on words. Do not convert the integer values into strings; this is very inefficient.
+
+  ## Mathematical description
+
+  Given an unsigned 64-bit integer $x$, the population count is simply the number of bits that are one, or equivalently the sum of all bits in the integer. If we denote the $i$th bit by $x_i$, then the population count would be equal to $\sum_{i=0}^{63} x_i$. For the purposes of this assignment, a simple summation will do. There are ways to make this computation more efficient, but they are beyond the scope of this assignment.
+
+  ## Specification of your program
+
+  Your program should read a number of unsigned integers from standard input, compute the population count of each integer, and output the population counts into standard output on separate lines.
+
+  The first line of the input contains one integers $n$ that is equal to the number of integers that follow.
+
+  The remaining $n$ lines each contain an unsigned 64-bit integer as a 16-byte hex string.
+
+  Your program should output $n$ lines each containing the population count as a decimal number (between 0 and 64, inclusive).

@@ -1,0 +1,22 @@
+Name: kth bit
+SuggestedSolutionVisibility: AfterSolved
+description: >-
+  ## Goal
+
+  The purpose of this exercise is to familiarize yourself with simple bit operations using a very frequently occurring idiom, namely to select and output the value of a designated bit in a word.
+
+  You should use bitwise operators available in your language that operate on words. Do not convert the integer values into strings; this is very inefficient.
+
+  ## Mathematical description
+
+  Given a 32-bit integer $x$, we number the bits 0, 1, ..., 31 starting from the *least significant bit*. That is, as we would commonly write the value of the integer as a binary number, bit number 0, corresponding to 1, would be the *rightmost* bit, and bit number 31, corresponding to $2^{31}$, would be the leftmost bit. You are supposed to extract the $k$th bit using bitwise operations.
+
+  ## Specification of your program
+
+  Your program should read a number of unsigned integers from standard input, extract the $k$th bit in each, and print out the values of the said bits (one per line).
+
+  The first line of the input contains two integers: $n$ and $k$ separated by spaces. The number $n$ is equal to the number of integers that follow, and $0 \leq k \leq 31$ is the number of the bit to extract.
+
+  The remaining $n$ lines each contain an unsigned 32-bit integer as a 8-byte hex string.
+
+  Your program should output $n$ lines each containing either a character '1' or a character '0' (without the apostrophes).
