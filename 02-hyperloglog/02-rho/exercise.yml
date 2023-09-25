@@ -1,0 +1,16 @@
+Name: Rho
+SuggestedSolutionVisibility: AfterSolved
+description: >-
+  ## Goal
+
+  The purpose of this exercise is to enable you to help verify the correctness of your $\rho$ function, as described in the instructions of Mandatory Assignment 3.
+
+  ## Mathematical description
+
+  Given an unsigned 32-bit integer $x$, we define $\rho(x) = \min \{ i \mid x_{k-i+1} = 1 \}$, that is, $\rho(x)$ is the position of the first 1-bit in the binary representation of $x$ *counting from the left*.
+  
+  ## Specification of your program
+
+  Your program should read a number of unsigned integers from standard input. The integers are provided as 32-bit hex strings. For each line of input, your program should print the value of $\rho(x)$ as an ordinary decimal number, followed by a newline, where $x$ is the integer read on the line.
+
+cpuTimeLimit: 1000

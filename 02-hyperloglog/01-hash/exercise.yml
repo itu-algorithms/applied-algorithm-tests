@@ -1,0 +1,17 @@
+Name: Hash
+SuggestedSolutionVisibility: AfterSolved
+description: >-
+  ## Goal
+
+  The purpose of this exercise is to enable you to help verify the correctness of your hash function, assuming you want to implement the hash function as described in the instructions of Mandatory Assignment 3.
+
+  ## Mathematical description
+
+  Given an unsigned 32-bit integer $x$, we number the bits 1, 2, ..., 32 starting from the *least significant bit*. Let $A$ be a $32\times 32$ binary array. We define the hash function as $h(x) = Ax \mod 2$. Equivalently, we define the $i$th bit of the hash function as $(h(x))_i = \sum_{j=1}^{32} A_{i,j} x_j \mod 2$.
+
+  ## Specification of your program
+
+  Your program should read a number of unsigned integers from standard input. The integers are provided as 32-bit hex strings. For each line of input, your program should print the hash value of the corresponding integer into standard output as a 32-bit hex string, followed by a newline.
+
+  Use the following integers as your matrix A (each integer corresponds to one row and are precisely the same as given in the instructions of Assignment 3): `0x21ae4036, 0x32435171, 0xac3338cf, 0xea97b40c, 0x0e504b22, 0x9ff9a4ef, 0x111d014d, 0x934f3787, 0x6cd079bf, 0x69db5c31, 0xdf3c28ed, 0x40daf2ad, 0x82a5891c, 0x4659c7b0, 0x73dc0ca8, 0xdad3aca2, 0x00c74c7e, 0x9a2521e2, 0xf38eb6aa, 0x64711ab6, 0x5823150a, 0xd13a3a9a, 0x30a5aa04, 0x0fb9a1da, 0xef785119, 0xc9f0b067, 0x1e7dde42, 0xdda4a7b2, 0x1a1c2640, 0x297c0633, 0x744edb48, 0x19adce93`.
+cpuTimeLimit: 5000

@@ -1,0 +1,13 @@
+Name: Threshold
+SuggestedSolutionVisibility: Never
+description: >-
+  ## Goal
+
+  The purpose of this exercise is to enable you to help verify the correctness of your HyperLogLog implementation, as described in the instructions of Mandatory Assignment 3.
+
+  ## Specification of your program
+
+  Your implementation should read a list of 32-bit *signed* integers, supplied in *decimal* format. The first integer is special and should be stored, say, in a variable `threshold`. Your program should determine if the number of distinct integers following this is above or below `threshold`, and output either `above` or `below`. Doing this successfully requires an estimation error of less than about 10%. Your program is space constrained, so using a naïve solution will not work on large instances, using HyperLogLog with $m=1024$ should suffice.
+  
+cpuTimeLimit: 128000
+memoryLimit: 10000
